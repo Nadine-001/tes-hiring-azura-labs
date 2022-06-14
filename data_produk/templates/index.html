@@ -45,10 +45,8 @@
                   Aksi tidak dapat dibatalkan.
                </div>
                <div class="modal-footer">
-                  {% for row in container %}
                   <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <a href="http://localhost:5000/hapus/{{row[0]}}" class="btn btn-danger">Hapus</a>
-                  {% endfor %}
+                  <a href="http://localhost:5000/hapus/{{container[0]}}" class="btn btn-danger">Hapus</a>
                </div>
             </div>
          </div>
