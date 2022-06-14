@@ -1,0 +1,31 @@
+<html>
+<head>
+   <title>Aplikasi Data Produk Deskripsi</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+</head>
+<body>
+   <div class="container">
+      <div class="col-sm-5">
+      <h2 style="margin-bottom:20px; margin-top:20px;">Detail Data Produk</h2>
+         <form action="url_for('detail', id_produk={{data[0]}})" method="post">
+            <div class="form-group">
+               <h5>ID Produk : {{data[0]}}</h5>
+            </div>
+            <div class="form-group">
+               <h5>Nama Produk : {{data[1]}}</h5>
+            </div>
+            <div class="form-group">
+               <h5>Keterangan : {{data[2]}}</h5>  
+            </div>
+            <div class="form-group">
+               <h5>Harga : Rp {{data[3]}}</h5>
+            </div>
+            <div class="form-group">
+               <h5>Stok : {{data[4]}}</h5>
+            </div>
+            <button style="margin-top:5px" type="submit" id="Submit" name="submit" class="btn btn-primary">Kembali</button>
+      </form>
+   </div>
+</div>
+</body>
+</html>
